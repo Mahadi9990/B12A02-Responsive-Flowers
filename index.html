@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B12A02-Responsive-Flowers</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script
       src="https://kit.fontawesome.com/e6a86cd1b0.js"
@@ -12,23 +12,39 @@
     ></script>
   </head>
   <body>
-    <header class="mx-w-[1400px] mx-auto px-2">
-      <nav class="flex justify-around items-center py-4">
+    <header class="w-[1400px] h-screen mx-auto px-2">
+      <nav class="flex justify-between items-center py-4">
         <div class="logo_area">
           <img src="assets/logo.png" alt="heaer_logo_image" />
         </div>
-        <ul class="hidden sm:flex lg:flex align-middle justify-center items-center gap-8 
-">
-          <li class="text-[#252432] font-extrabold"><a class="p-2" href="#">Home</a></li>
-          <li class="text-[#8987A1] "><a class="p-2" href="#">Shop</a></li>
-          <li class="text-[#8987A1] "><a class="p-2" href="#">About Us</a></li>
-          <li class="text-[#252432]"><a class="p-2" href="#"><i class="fa-solid fa-cart-shopping"></i><span class="ps-2">Cart ($56)</span></a></li>
+        <ul
+          class="hidden sm:flex lg:flex align-middle justify-center items-center gap-8"
+        >
+          <li class="text-[#252432] font-extrabold">
+            <a class="p-2" href="#">Home</a>
+          </li>
+          <li class="text-[#8987A1]"><a class="p-2" href="#">Shop</a></li>
+          <li class="text-[#8987A1]"><a class="p-2" href="#">About Us</a></li>
+          <li class="text-[#252432]">
+            <a class="p-2" href="#"
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span class="ps-2">Cart ($56)</span></a
+            >
+          </li>
         </ul>
         <div class="block sm:hidden card_icon">
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </nav>
-      <div class="banner_area"></div>
+      <div class="banner_area flex justify-between items-center gap-4 px-4 py-8">
+        <div class="content_area noto-serif w-[50%]">
+          <h1 class="text-[4rem] text-[#000000] font-semibold">Cart ($56) <br> <span class="text-[#E95A08]">FLOWERS</span></h1>
+          <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+        </div>
+        <div class="image_area">
+          <img src="assets/hero-flower.png" alt="">
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
