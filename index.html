@@ -12,13 +12,13 @@
     ></script>
   </head>
   <body>
-    <header class="w-[1400px] h-screen mx-auto px-2">
+    <header class="w-[100%] sm:w-[90%] h-[100%] mx-auto px-2">
       <nav class="flex justify-between items-center py-4">
         <div class="logo_area">
           <img src="assets/logo.png" alt="heaer_logo_image" />
         </div>
         <ul
-          class="hidden sm:flex lg:flex align-middle justify-center items-center gap-8"
+          class="hidden sm:hidden md:flex lg:flex align-middle justify-center items-center gap-8"
         >
           <li class="text-[#252432] font-extrabold">
             <a class="p-2" href="#">Home</a>
@@ -32,43 +32,42 @@
             >
           </li>
         </ul>
-        <div class="block sm:hidden card_icon">
+        <div class="card_icon block sm:block md:hidden lg:hidden">
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </nav>
       <div
-        class="banner_area flex justify-between items-center gap-4 px-4 py-8"
-      >
-        <div class="content_area noto-serif w-[50%]">
-          <h1 class="text-[4rem] text-[#000000] font-semibold">
-            Cart ($56) <br />
-            <span class="text-[#E95A08]">FLOWERS</span>
-          </h1>
-          <p>
-            Indulge your senses with the beauty and fragrance of our fresh
-            flower shop. From classic roses to exotic blooms, we offer a wide
-            variety of fresh flowers that are perfect for any occasion.
-          </p>
-        </div>
-        <div class="image_area">
-          <img src="assets/hero-flower.png" alt="" />
-        </div>
+        class="banner_area w-[100%] flex flex-col-reverse sm:flex-row  justify-between items-start sm:items-center gap-4 px-4 py-8">
+          <div class="content_area noto-serif w-full sm:w-[45%]">
+            <h1 class="text-[2rem] md:text-[3rem] text-[#E95A08] font-semibold">
+              <span class="text-[#000000]">ALWAYS </span> FRESH <br />
+              FLOWERS
+            </h1>
+            <p class=" text-[0.8rem] sm:text-[0.4rem] md:text-[0.6rem] lg:text-[1rem] text-[#252432] mt-4">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh flowers that are perfect for any occasion.
+            </p>
+          </div>
+          <div class="image_area">
+            <img src="assets/hero-flower.png" alt="" />
+          </div>
       </div>
     </header>
     <main>
       <section>
-        <div class="w-[1400px] mx-auto px-2 py-8 text-center noto-serif">
-          <h2 class="text-[3rem] text-[#000000] font-semibold mb-4">
-            <span class="text-[#E95A08]">Our</span> Flowers
+        <div class="w-100% sm:w[90%] mx-auto px-2 py-8 text-center noto-serif">
+          <h2 class=" text-[2rem] sm:text-[3rem] text-[#000000] font-semibold mb-4">
+            <span class="text-[#E95A08]">Our</span> Plants
           </h2>
-          <p class="w-[650px] mx-auto text-[1.2rem] text-[#252432]">
+          <p class="w-[100%] sm:w-[90%] mx-auto text-[0.8rem] sm:text-[1.2rem] text-[#252432]">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
             variety of fresh flowers that are perfect for any occasion.
           </p>
         </div>
         <div
-          class="flower_card w-[1400px] mx-auto px-2 py-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center"
+          class="flower_card w-full sm:w-[90%] mx-auto px-2 py-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center"
         >
           <div class="card shadow-sm p-4">
             <img
@@ -76,11 +75,109 @@
               src="assets/sample-flower-image.png"
               alt="Flower 1"
             />
-            <h3 class="text-[1.5rem] text-[#000000] font-semibold">
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] text-[#000000] font-semibold">
               Lily Blossom
             </h3>
-            <h3 class="text-[1.5rem] font-extrabold">20 USD</p>
-            <button class="btn add_to_cart_btn w-full">
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] font-extrabold">20 USD</p>
+            <button class=" text-[0.8rem] sm:text-[1.3rem] btn add_to_cart_btn w-full">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card shadow-sm p-4">
+            <img
+              class="w-full"
+              src="assets/sample-flower-image.png"
+              alt="Flower 1"
+            />
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] text-[#000000] font-semibold">
+              Lily Blossom
+            </h3>
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] font-extrabold">20 USD</p>
+            <button class=" text-[0.8rem] sm:text-[1.3rem] btn add_to_cart_btn w-full">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card shadow-sm p-4">
+            <img
+              class="w-full"
+              src="assets/sample-flower-image.png"
+              alt="Flower 1"
+            />
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] text-[#000000] font-semibold">
+              Lily Blossom
+            </h3>
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] font-extrabold">20 USD</p>
+            <button class=" text-[0.8rem] sm:text-[1.3rem] btn add_to_cart_btn w-full">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card shadow-sm p-4">
+            <img
+              class="w-full"
+              src="assets/sample-flower-image.png"
+              alt="Flower 1"
+            />
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] text-[#000000] font-semibold">
+              Lily Blossom
+            </h3>
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] font-extrabold">20 USD</p>
+            <button class=" text-[0.8rem] sm:text-[1.3rem] btn add_to_cart_btn w-full">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card shadow-sm p-4">
+            <img
+              class="w-full"
+              src="assets/sample-flower-image.png"
+              alt="Flower 1"
+            />
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] text-[#000000] font-semibold">
+              Lily Blossom
+            </h3>
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] font-extrabold">20 USD</p>
+            <button class=" text-[0.8rem] sm:text-[1.3rem] btn add_to_cart_btn w-full">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card shadow-sm p-4">
+            <img
+              class="w-full"
+              src="assets/sample-flower-image.png"
+              alt="Flower 1"
+            />
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] text-[#000000] font-semibold">
+              Lily Blossom
+            </h3>
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] font-extrabold">20 USD</p>
+            <button class=" text-[0.8rem] sm:text-[1.3rem] btn add_to_cart_btn w-full">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card shadow-sm p-4">
+            <img
+              class="w-full"
+              src="assets/sample-flower-image.png"
+              alt="Flower 1"
+            />
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] text-[#000000] font-semibold">
+              Lily Blossom
+            </h3>
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] font-extrabold">20 USD</p>
+            <button class=" text-[0.8rem] sm:text-[1.3rem] btn add_to_cart_btn w-full">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card shadow-sm p-4">
+            <img
+              class="w-full"
+              src="assets/sample-flower-image.png"
+              alt="Flower 1"
+            />
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] text-[#000000] font-semibold">
+              Lily Blossom
+            </h3>
+            <h3 class=" text-[0.8rem] sm:text-[1.5rem] font-extrabold">20 USD</p>
+            <button class=" text-[0.8rem] sm:text-[1.3rem] btn add_to_cart_btn w-full">
               Add to Cart
             </button>
           </div>
