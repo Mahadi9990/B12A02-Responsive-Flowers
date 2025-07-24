@@ -15,8 +15,7 @@
     padding: 0.5rem 1rem;
 }
 
-.brand_image {
-    display: inline-block; 
+.brand_image { 
     animation: rotate 4s linear infinite; 
 }
 
