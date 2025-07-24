@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B12A02-Responsive-Flowers</title>
+    <!-- style file for google font -->
     <link rel="stylesheet" href="styles/style.css" />
+    <!-- tailwind css link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font fontawesome link  -->
     <script
       src="https://kit.fontawesome.com/e6a86cd1b0.js"
       crossorigin="anonymous"
@@ -13,6 +16,7 @@
   </head>
   <body>
     <header class="w-[100%] sm:w-[90%] h-[100%] mx-auto px-2">
+      <!-- nav area start -->
       <nav class="flex justify-between items-center py-4">
         <div class="logo_area">
           <img src="assets/logo.png" alt="heaer_logo_image" />
@@ -36,6 +40,9 @@
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </nav>
+      <!-- nav area end -->
+
+      <!-- banner_area area start -->
       <div
         class="banner_area w-[100%] flex flex-col-reverse sm:flex-row  justify-between items-start sm:items-center gap-4 px-4 py-8">
           <div class="content_area noto-serif w-full sm:w-[45%]">
@@ -53,8 +60,10 @@
             <img src="assets/hero-flower.png" alt="" />
           </div>
       </div>
+      <!-- banner_area area end -->
     </header>
     <main>
+      <!-- card_section start -->
       <section class="card_section">
         <div class="w-100% sm:w[90%] mx-auto px-2 py-8 text-center noto-serif">
           <h2 class=" text-[2rem] sm:text-[3rem] text-[#000000] font-semibold mb-4">
@@ -183,6 +192,9 @@
           </div>
         </div>
       </section>
+      <!-- card_section end -->
+
+       <!-- feature_section start -->
       <section class="feature_section  w-[90%] mx-auto mt-[100px]">
         <div class="feature_content_area noto-serif text-center flex flex-col md:flex-row justify-between md:justify-between items-start gap-4">
           <div class="image_area w-full lg:w-[50%] mx-auto md:relative">
@@ -201,30 +213,36 @@
           </div>
         </div>
       </section>
+      <!-- feature_section end -->
+
+      <!-- extra_mark_area start -->
       <section class="extra_mark_area sm:h-screen mt-20 mb-0 pb-0 text-center w-[90%] mx-auto">
           <h1 class="text-[#E95A08] text-[2rem] font-bold ">Latest  <span class="text-black">Deals</span></h1>
           <p class="mb-20">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
           <div class="box_area grid grid-cols-1 grid-rows-1  sm:grid-cols-3  sm:grid-rows-3  gap-4 ">
             <div class="itme rounded-[20px] overflow-hidden bg-[url('assets/deal-bloom.png')] bg-cover bg-center h-64 w-full text-white">
               <div class="bg-[rgba(0,0,0,0.4)] h-full w-full flex flex-col justify-center items-center">
-                <h1 class="text-2xl noto-serif font-bold">60% Off | Bloom Plant</h1>
+                <h1 class="text-2xl sm:text-[1rem] md:text-[1.1rem] lg:text-2xl noto-serif font-bold">60% Off | Bloom Plant</h1>
                 <button class="underline font-bold">Shop Now</button>
               </div>
             </div>
             <div class="itme  rounded-[20px] overflow-hidden bg-[url('assets/deal-zabo.png')] bg-cover bg-center  h-64 sm:h-132 w-full text-white col-span-1 row-span-1 sm:col-span-2 sm:row-span-2  ">
               <div class="bg-[rgba(0,0,0,0.4)] h-full w-full flex flex-col justify-center items-center">
-                <h1 class="text-2xl noto-serif font-bold">30% Off | Ana  Plant</h1>
+                <h1 class="text-2xl sm:text-[1rem] md:text-[1.1rem] lg:text-2xl noto-serif font-bold">30% Off | Ana  Plant</h1>
                 <button class="underline font-bold">Shop Now</button>
               </div>
             </div>
             <div class="itme  rounded-[20px] overflow-hidden bg-[url('assets/deal-ana.png')] bg-cover bg-center h-64 w-full text-white">
               <div class="bg-[rgba(0,0,0,0.4)] h-full w-full flex flex-col justify-center items-center">
-                <h1 class="text-2xl noto-serif font-bold">25% Off | Zabo Plant</h1>
+                <h1 class="text-2xl sm:text-[1rem] md:text-[1.1rem] lg:text-2xl noto-serif font-bold">25% Off | Zabo Plant</h1>
                 <button class="underline font-bold">Shop Now</button>
               </div>
             </div>
           </div>
       </section>
+      <!-- extra_mark_area end -->
+
+      <!-- input_area area start  -->
       <section class="input_area w-full mx-auto mt-20">
         <div class=" bg-[url('assets/news-letter-bg.png')] bg-cover bg-center h-[400px] w-full flex flex-col gap-4 justify-center items-center text-center"> ">
           <h1 class="noto-serif text-[2rem] sm:text-[3rem] text-white font-bold">Join the colorful Bunch</h1>
@@ -234,7 +252,10 @@
           </div>
         </div>
       </section>
+      <!-- input_area area end  -->
+
     </main>
+
     <footer class="w-[90%] mx-auto px-2 py-8">
       <div class="grid grid-cols-1 grid-rows-1 sm:grid-cols-2 md:grid-cols-6  gap-4 mt-20 text-center">
         <div class="card w-full h-64 col-span-1 sm:col-span-2 flex flex-col justify-center items-start px-4">
