@@ -15,3 +15,16 @@
     padding: 0.5rem 1rem;
 }
 
+.brand_image {
+    display: inline-block; 
+    animation: rotate 4s linear infinite; 
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
